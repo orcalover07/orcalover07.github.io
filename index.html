@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mechanical engineering portfolio focused on mechanical design and materials science." />
+    <meta name="theme-color" content="#dff4ff" />
+    <title>Emily | Mechanical Engineering</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <a class="mark" href="#top" aria-label="Emily, home">E<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Mechanical Engineering · UT Austin</p>
+          <h1 id="hero-title">EMILY</h1>
+          <p class="intro">Mechanical engineer at UT Austin interested in mechanical design and materials science.</p>
+        </div>
+        <div class="hero-blank" aria-label="Space reserved for a portrait or introduction"><span>Your photo</span></div>
+        <div class="current-note" aria-hidden="true">
+          <span>Currently exploring</span>
+          <strong>Design · Materials · Making</strong>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <header class="section-heading">
+          <div>
+            <p class="section-index">01 / Selected work</p>
+            <h2 id="projects-title">Projects</h2>
+          </div>
+          <p class="section-note">A few things I’ve designed and built.</p>
+        </header>
+
+        <article class="project-card reverse">
+          <div class="project-media">
+            <img src="media/motion_translation_gear_sys.gif" alt="SOLIDWORKS animation of a motion translation gear system" loading="lazy" />
+          </div>
+          <div class="project-copy">
+            <p class="project-number">01 / 02</p>
+            <h3>Gear Translation System</h3>
+            <p class="date">September 2026</p>
+            <p>Designed a planetary and bevel gear assembly to transfer rotation through a perpendicular axis at a 3:1 bevel gear ratio.</p>
+            <ul>
+              <li>Verified motion and power transmission</li>
+              <li>Evaluated key components with FEA</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card robot-card">
+          <div class="project-media">
+            <img src="media/distance_sensing_gif.gif" alt="Obstacle avoidance robot detecting an object and changing direction" loading="lazy" />
+          </div>
+          <div class="project-copy">
+            <p class="project-number">02 / 02</p>
+            <h3>Obstacle Avoidance Robot</h3>
+            <p class="date">July 2026</p>
+            <p>Designed, modeled, 3D-printed, wired, and coded an autonomous obstacle avoidance robot.</p>
+            <ul>
+              <li>Iterated sensor, motor, battery, and breadboard mounts</li>
+              <li>Designed around printer tolerances and support reduction</li>
+            </ul>
+          </div>
+          <details class="learn-more">
+            <summary>Learn more <span aria-hidden="true">↘</span></summary>
+            <div class="cad-gallery">
+              <figure>
+                <img src="media/images/distance_sensor.png" alt="CAD model of a distance sensor mount" loading="lazy" />
+                <figcaption><strong>Placeholder header</strong><span>Placeholder caption</span></figcaption>
+              </figure>
+              <figure>
+                <img src="media/images/motor_mount.png" alt="CAD model of a motor mount" loading="lazy" />
+                <figcaption><strong>Placeholder header</strong><span>Placeholder caption</span></figcaption>
+              </figure>
+              <figure>
+                <img src="media/images/obstacle_avoidance_bot_chassis.png" alt="CAD model of the obstacle avoidance robot chassis" loading="lazy" />
+                <figcaption><strong>Placeholder header</strong><span>Placeholder caption</span></figcaption>
+              </figure>
+            </div>
+          </details>
+        </article>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <header class="section-heading compact">
+          <div>
+            <p class="section-index">02 / Experience</p>
+            <h2 id="experience-title">Experience</h2>
+          </div>
+        </header>
+        <article class="experience-row">
+          <p class="experience-meta">07 / 2025<br />Montgomery County Power Station</p>
+          <div>
+            <h3>Intern</h3>
+            <p class="company">Entergy</p>
+            <ul>
+              <li>Gained hands-on experience with power plant operations.</li>
+              <li>Practiced sensor and meter calibration, wiring, and reading circuit diagrams—from simulators to field work.</li>
+            </ul>
+          </div>
+        </article>
+        <div class="open-row" aria-label="Space reserved for another experience"><span>Future experience</span></div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="section-index">03 / About</p>
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="about-copy">
+          <p>I’m a mechanical engineer at UT Austin with an interest in mechanical design and materials science.</p>
+          <div class="about-blank" aria-label="Space reserved for a personal note">Add a little more about yourself here.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="mark footer-mark" href="#top" aria-label="Back to top">E<span>.</span></a>
+      <p>© <span id="year"></span> Emily</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
