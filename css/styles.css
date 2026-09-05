@@ -187,6 +187,26 @@ li::marker { color: var(--blue); }
 .cad-gallery figcaption strong { font-family: "Space Grotesk", sans-serif; font-size: 0.95rem; }
 .cad-gallery figcaption span { color: var(--muted); font-size: 0.85rem; }
 
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(3rem, 8vw, 6rem);
+}
+.about-copy > p {
+  max-width: 38rem;
+  margin: 2rem 0 2.5rem;
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  line-height: 1.42;
+}
+.about-blank {
+  min-height: 8rem;
+  padding: 1.4rem;
+  border: 1px dashed rgba(8, 118, 174, 0.35);
+  border-radius: 0.75rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 footer { display: flex; align-items: center; justify-content: space-between; min-height: 9rem; border-top: 1px solid var(--line); font-size: 0.85rem; }
 
 @media (max-width: 760px) {
@@ -199,8 +219,10 @@ footer { display: flex; align-items: center; justify-content: space-between; min
   .hero-portrait { width: min(68vw, 16.5rem); max-height: 20.625rem; justify-self: center; }
   .current-note { bottom: 2rem; flex-direction: column; align-items: flex-start; gap: 0.15rem; }
   .section { padding: 5rem 0; }
-  .section-heading { grid-template-columns: 1fr; gap: 1.5rem; }
+  .section-heading, .about { grid-template-columns: 1fr; gap: 1.5rem; }
   .section-heading { margin-bottom: 3rem; }
+  .about-copy > p { margin-top: 0; font-size: clamp(1.2rem, 5.5vw, 1.55rem); }
+  .about-blank { min-height: 7rem; }
   .project-card { grid-template-columns: 1fr; }
   .project-card.reverse .project-media { order: 0; }
   .project-media { min-height: 20rem; }
